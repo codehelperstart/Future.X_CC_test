@@ -270,7 +270,7 @@ codehelperstart-learning-platform/
 
 ### 1. 克隆项目
 ```bash
-git clone https://github.com/your-username/codehelperstart-learning-platform.git
+git clone https://github.com/codehelperstart/Future.X_CC_test.git
 cd codehelperstart-learning-platform
 ```
 
