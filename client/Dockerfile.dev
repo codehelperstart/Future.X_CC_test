@@ -1,0 +1,24 @@
+# 前端开发环境Dockerfile
+FROM node:18-alpine
+
+# 设置工作目录
+WORKDIR /app
+
+# 设置用户和权限
+RUN addgroup -g 1001 -S nodejs
+RUN adduser -S nodejs -u 1001
+
+# 切换到nodejs用户
+USER nodejs
+
+# 复制package.json文件
+COPY --chown=nodejs:nodejs package*.json ./
+
+# 安装依赖
+RUN npm install
+
+# 暴露端口
+EXPOSE 3000
+
+# 启动React开发服务器
+CMD ["npm", "start"]

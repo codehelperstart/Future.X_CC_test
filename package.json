@@ -1,0 +1,27 @@
+{
+  "name": "ai-coding-learning-platform",
+  "version": "1.0.0",
+  "description": "AI编程学习平台 - 帮助新手学习AI辅助编程",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "server:dev": "cd server && npm run dev",
+    "client:dev": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": [
+    "AI",
+    "编程",
+    "学习",
+    "平台",
+    "新手",
+    "教程"
+  ],
+  "author": "AI Coding Platform Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
